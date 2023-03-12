@@ -39,3 +39,9 @@ article {
     transition: 0.3s;
   }
 }
+
+@media (max-width: 950px) {
+  article {
+    width: 100%;
+  }
+}
