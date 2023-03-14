@@ -1,19 +1,42 @@
-.atsiliepimai {
+#atsiliepimai {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
     box-shadow: 0px 3px 16px -2px rgba(0, 0, 0, 0.49);
     background: #ececec;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+
+    h1 {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-size: 1.5rem;
+
+    }
    
-     img {
+    .reviews {
+        display: flex;
+        justify-content: space-between;
+
+        img {
         width: 30%;
      }
+    }
 }
 
+@media (min-width: 2501px) {
+    #atsiliepimai {
+      h1 {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  
+
 @media (hover: hover) {
-    .atsiliepimai:hover {
+    #atsiliepimai:hover {
         transform: scale(1.05);
         transition: 0.3s;
       }
