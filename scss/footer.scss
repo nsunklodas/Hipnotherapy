@@ -56,13 +56,7 @@ footer {
       height: auto;
     }
   }
-
-  @media (max-height: 700px) {
-    footer {
-      display: none;
-    }
-  }
-
+  
   @media (max-width: 1000px) {
     footer {
       position: static;
