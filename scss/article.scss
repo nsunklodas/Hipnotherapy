@@ -1,5 +1,22 @@
+.big1 {
+  height: auto !important;
+}
+
+.big2 {
+  height: auto !important;
+}
+
+.big3 {
+  height: auto !important;
+}
+
+.big4 {
+  height: auto !important;
+}
+
 article {
   margin: auto;
+  height: 100px;
   width: 60%;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -8,7 +25,8 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  overflow: hidden;
 
   h1 {
     text-align: center;
@@ -35,6 +53,7 @@ article {
 
 @media (hover: hover) {
   article:hover {
+    cursor: pointer;
     transform: scale(1.05);
     transition: 0.3s;
   }

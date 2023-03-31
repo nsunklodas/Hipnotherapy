@@ -12,5 +12,24 @@ document.querySelectorAll(".link").forEach(n => n.addEventListener("click", () =
     nav.classList.remove("active")
 }));
 
+function function1() {
+    var article = document.getElementById("article1");
+    article.classList.toggle("big1");
+}
+
+function function2() {
+    var article1 = document.getElementById("article2");
+    article1.classList.toggle("big2");
+}
+
+function function3() {
+    var article = document.getElementById("article3");
+    article.classList.toggle("big3");
+}
+
+function function4() {
+    var article1 = document.getElementById("article4");
+    article1.classList.toggle("big4");
+}
 
 
