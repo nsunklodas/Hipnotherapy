@@ -25,6 +25,9 @@
     visibility: visible;
   }
 }
+article:first-of-type {
+  height: 50px;
+}
 
 article {
   margin: auto;
@@ -79,6 +82,9 @@ article {
 }
 
 @media (max-width: 1050px) {
+  article:first-of-type {
+    height: 50px;
+  }
   article {
     height: 200px;
   }
