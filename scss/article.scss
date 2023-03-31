@@ -1,17 +1,29 @@
 .big1 {
   height: auto !important;
+  p {
+    visibility: visible;
+  }
 }
 
 .big2 {
   height: auto !important;
+  p {
+    visibility: visible;
+  }
 }
 
 .big3 {
   height: auto !important;
+  p {
+    visibility: visible;
+  }
 }
 
 .big4 {
   height: auto !important;
+  p {
+    visibility: visible;
+  }
 }
 
 article {
@@ -35,6 +47,7 @@ article {
   p {
     padding: 30px;
     line-height: 25px;
+    visibility: hidden;
   }
 }
 
@@ -62,5 +75,11 @@ article {
 @media (max-width: 950px) {
   article {
     width: 100%;
+  }
+}
+
+@media (max-width: 1050px) {
+  article {
+    height: 200px;
   }
 }
