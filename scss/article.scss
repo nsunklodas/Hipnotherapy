@@ -42,6 +42,8 @@ article {
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
+  animation-name: fader;
+  animation-duration: 2s;
 
   h1 {
     text-align: center;
