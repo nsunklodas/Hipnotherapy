@@ -48,8 +48,6 @@ function function3() {
 function function4() {
     var article1 = document.getElementById("article4");
     article1.classList.toggle("big4");
-};
-
-
+}
 
 

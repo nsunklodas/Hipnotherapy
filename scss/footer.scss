@@ -5,16 +5,15 @@
 }
 
 footer {
-  display: flex;
-  position: fixed;
-  justify-content: space-between;
-  background: #ececec;
-  box-shadow: -1px -3px 21px -6px rgba(0, 0, 0, 0.75);
-  width: 60%;
-  height: 100px;
-  z-index: 99;
-  bottom: 0;
-  transition: 500ms ease-in;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    background: #ECECEC;
+    box-shadow: -1px -3px 21px -6px rgba(0,0,0,0.75);
+    width: 60%;
+    height: 100px;
+    z-index: 99;
+    bottom: 0;
 
   #logo {
     text-decoration: none;
@@ -55,21 +54,16 @@ footer {
   }
 }
 
-@media (max-width: 650px) {
-  footer {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
+  @media (max-width: 650px) {
+    footer {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
   }
-}
-
-@media (max-width: 1000px) {
-  .footer--hidden {
-    transform: none;
-    box-shadow: -1px -3px 21px -6px rgba(0, 0, 0, 0.75);
+  
+  @media (max-width: 1000px) {
+    footer {
+      position: static;
+    }
   }
-
-  footer {
-    position: static;
-  }
-}
