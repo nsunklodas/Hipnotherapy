@@ -1,64 +1,75 @@
+.footer--hidden {
+  transform: translateY(100px);
+  box-shadow: none;
+  transition: 500ms ease-in;
+}
+
 footer {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  background: #ececec;
+  box-shadow: -1px -3px 21px -6px rgba(0, 0, 0, 0.75);
+  width: 60%;
+  height: 100px;
+  z-index: 99;
+  bottom: 0;
+  transition: 500ms ease-in;
+
+  #logo {
+    text-decoration: none;
+    text-align: center;
+    margin: auto 30px;
+    color: black;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .nav {
     display: flex;
-    position: fixed;
-    justify-content: space-between;
-    background: #ECECEC;
-    box-shadow: -1px -3px 21px -6px rgba(0,0,0,0.75);
-    width: 60%;
-    height: 100px;
-    z-index: 99;
-    bottom: 0;
+    align-items: center;
+    margin: 30px;
 
-    #logo {
+    a {
       text-decoration: none;
-      text-align: center;
-      margin: auto 30px;
       color: black;
-
-      h1 {
-        font-size: 1.5rem;
-      }
+      padding: 10px;
     }
 
-    .nav {
-      display: flex;
-      align-items: center;
-      margin: 30px;
-  
-      a {
-        text-decoration: none;
-        color: black;
-        padding: 10px;
-      }
-  
-      a:hover {
-        transition: 0.3s;
-        color: rgba(0, 0, 0, 0.456);
-      }
+    a:hover {
+      transition: 0.3s;
+      color: rgba(0, 0, 0, 0.456);
+    }
 
-      a:nth-of-type(1) {
-        border-right: 1px solid black;
-      }
+    a:nth-of-type(1) {
+      border-right: 1px solid black;
     }
   }
+}
 
-
-  @media (max-width: 1430px) {
-    footer {
-      width: 100%;
-    }
-  }  
-
-  @media (max-width: 650px) {
-    footer {
-      flex-direction: column;
-      align-items: center;
-      height: auto;
-    }
+@media (max-width: 1430px) {
+  footer {
+    width: 100%;
   }
-  
-  @media (max-width: 1000px) {
-    footer {
-      position: static;
-    }
+}
+
+@media (max-width: 650px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
   }
+}
+
+@media (max-width: 1000px) {
+  .footer--hidden {
+    transform: none;
+    box-shadow: -1px -3px 21px -6px rgba(0, 0, 0, 0.75);
+  }
+
+  footer {
+    position: static;
+  }
+}

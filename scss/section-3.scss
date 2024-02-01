@@ -1,6 +1,7 @@
 .klausimai {
   width: 80% !important;
 }
+
 .paslaugos {
   width: 40%;
   margin: auto;
@@ -11,9 +12,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  animation-name: fader;
+  animation-duration: 2s;
 
   .atsakymai {
-
     h2 {
       font-size: 1.15rem;
       margin: 20px;
@@ -86,7 +88,6 @@
   }
 
   .paslaugos {
-
     li {
       a:hover {
         opacity: 0.6;

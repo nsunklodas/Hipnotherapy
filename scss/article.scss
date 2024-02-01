@@ -42,6 +42,8 @@ article {
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
+  animation-name: fader;
+  animation-duration: 2s;
 
   h1 {
     text-align: center;
@@ -100,7 +102,6 @@ article {
 }
 
 @media (min-width: 416px) and (max-width: 509px) {
-  
   article:first-of-type {
     height: 70px;
   }
@@ -108,14 +109,13 @@ article {
   article:nth-of-type(2) {
     height: 120px;
   }
-  
+
   article {
     height: 170px;
   }
 }
 
 @media (min-width: 510px) and (max-width: 900px) {
-
   article:first-of-type {
     height: 70px;
   }
@@ -131,7 +131,7 @@ article {
 
 @media (min-width: 901px) and (max-width: 1130px) {
   article:nth-of-type(3) {
-    height: 150px; 
+    height: 150px;
   }
 }
 
