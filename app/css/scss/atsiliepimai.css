@@ -1,0 +1,61 @@
+#atsiliepimai {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0px 3px 16px -2px rgba(0, 0, 0, 0.49);
+  background: #ececec;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#atsiliepimai h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+#atsiliepimai .reviews {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+#atsiliepimai .reviews img {
+  width: 30%;
+  height: 380px;
+  box-shadow: 0px 3px 16px -2px rgba(0, 0, 0, 0.49);
+}
+
+@media (max-width: 1430px) {
+  #atsiliepimai .reviews img {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+@media (max-width: 950px) {
+  #atsiliepimai .reviews {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  #atsiliepimai .reviews img {
+    width: 60%;
+  }
+}
+@media (min-width: 2501px) {
+  #atsiliepimai h1 {
+    font-size: 1.7rem;
+  }
+}
+@media (hover: hover) {
+  #atsiliepimai:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+}
+@media (min-width: 2000px) {
+  #atsiliepimai .reviews img {
+    height: 500px;
+  }
+}/*# sourceMappingURL=atsiliepimai.css.map */

@@ -1,0 +1,124 @@
+.big1 {
+  height: auto !important;
+}
+.big1 p {
+  visibility: visible;
+}
+
+.big2 {
+  height: auto !important;
+}
+.big2 p {
+  visibility: visible;
+}
+
+.big3 {
+  height: auto !important;
+}
+.big3 p {
+  visibility: visible;
+}
+
+.big4 {
+  height: auto !important;
+}
+.big4 p {
+  visibility: visible;
+}
+
+article:first-of-type {
+  height: 70px;
+}
+
+article {
+  margin: auto;
+  height: 100px;
+  width: 60%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0px 3px 16px -2px rgba(0, 0, 0, 0.49);
+  background: #ececec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  animation-name: fader;
+  animation-duration: 2s;
+}
+article h1 {
+  text-align: center;
+}
+article p {
+  padding: 30px;
+  line-height: 25px;
+  visibility: hidden;
+}
+
+@media (min-width: 2501px) {
+  article h1 {
+    font-size: 1.7rem;
+  }
+  article p {
+    line-height: 30px;
+    font-size: 1.5rem;
+  }
+}
+@media (hover: hover) {
+  article:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+}
+@media (max-width: 950px) {
+  article {
+    width: 100%;
+  }
+}
+@media (max-width: 415px) {
+  article:first-of-type {
+    height: 70px;
+  }
+  article:nth-of-type(2) {
+    height: 145px;
+  }
+  article:nth-of-type(3) {
+    height: 180px;
+  }
+  article {
+    height: 170px;
+  }
+}
+@media (min-width: 416px) and (max-width: 509px) {
+  article:first-of-type {
+    height: 70px;
+  }
+  article:nth-of-type(2) {
+    height: 120px;
+  }
+  article {
+    height: 170px;
+  }
+}
+@media (min-width: 510px) and (max-width: 900px) {
+  article:first-of-type {
+    height: 70px;
+  }
+  article:nth-of-type(2) {
+    height: 100px;
+  }
+  article {
+    height: 140px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1130px) {
+  article:nth-of-type(3) {
+    height: 150px;
+  }
+}
+@media (min-width: 1431px) {
+  article:nth-of-type(3) {
+    height: 150px;
+  }
+}/*# sourceMappingURL=article.css.map */
